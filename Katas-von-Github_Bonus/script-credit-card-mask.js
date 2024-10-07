@@ -18,14 +18,14 @@ Examples (input --> output):
 
 */
 function maskify(cc) {
-  // Überprüfen, ob die Eingabe kürzer als 4 Zeichen ist
+  // Überprüft, ob Eingabe kürzer als 4 Zeichen ist
   if (cc.length <= 4) {
-    return cc; // Wenn ja, einfach die Eingabe zurückgeben
+    return cc; // Wenn ja, die Eingabe zurückgeben
   }
   // Maskieren aller Zeichen außer den letzten vier
-  const maskedPart = "#".repeat(cc.length - 4); // Erstellen der Maskierung
-  const visiblePart = cc.slice(-4); // Die letzten vier Zeichen extrahieren
-  return maskedPart + visiblePart; // Maskierte und sichtbare Teile zusammenfügen
+  const maskiert = "#".repeat(cc.length - 4); // Erstellt Maskierung
+  const sichtbar = cc.slice(-4); // Die letzten vier Zeichen extrahieren
+  return maskiert + sichtbar; // maskierte und sichtbare Teile zusammenfügen
 }
 
 // Beispiele
