@@ -42,3 +42,12 @@ s.split('')
 // verbindet die formatierten Buchstaben mit einem Bindestrich.
 
 */
+
+/*
+Allternative:
+
+function accum(s) {
+	return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+}
+
+*/
