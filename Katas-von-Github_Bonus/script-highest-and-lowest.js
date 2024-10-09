@@ -31,19 +31,18 @@ Allternative:
 
 1. aus dem Netz
 
-// function highAndLow(numbers) {
-//   // Die Zahlen in ein Array umwandeln
-//   const numArray = numbers.split(" ").map(Number);
+function highAndLow(numbers) {
+  // Die Zahlen in ein Array umwandeln
+  const numArray = numbers.split(" ").map(Number);
 
-//   // Das höchste und das niedrigste Element finden
-//   const highest = Math.max(...numArray);
-//   const lowest = Math.min(...numArray);
+  // Das höchste und das niedrigste Element finden
+  const highest = Math.max(...numArray);
+  const lowest = Math.min(...numArray);
 
-//   // Die Ergebnisse als String zurückgeben
-//   return 
-//   ${highest} ${lowest}
-//   ;
-//   }
+  // Die Ergebnisse als String zurückgeben
+  return `
+  ${highest} ${lowest}`;  // allternativ ginge auch: return highest + " " + lowest;
+}
 
 2. von CodeWars
 
